@@ -9,14 +9,14 @@ Licensed under the MIT License.
 
   <group if="$(arg overwrite_robot_description)">
     <param name="robot_description"
-      command="xacro $(find azure_kinect_ros_driver)/urdf/azure_kinect.urdf.xacro tf_prefix:=$(arg tf_prefix)" />
+      command="xacro $(find sitc_ak_driver)/urdf/azure_kinect.urdf.xacro tf_prefix:=$(arg tf_prefix)" />
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
   </group>
 
   <group unless="$(arg overwrite_robot_description)">
     <param name="azure_description"
-      command="xacro $(find azure_kinect_ros_driver)/urdf/azure_kinect.urdf.xacro tf_prefix:=$(arg tf_prefix)" />
+      command="xacro $(find sitc_ak_driver)/urdf/azure_kinect.urdf.xacro tf_prefix:=$(arg tf_prefix)" />
     <node name="joint_state_publisher_azure" pkg="joint_state_publisher" type="joint_state_publisher">
       <remap from="robot_description" to="azure_description" />
     </node>  
@@ -47,7 +47,7 @@ Licensed under the MIT License.
   <arg name="wired_sync_mode" default="0"/>                       <!-- Wired sync mode. 0: OFF, 1: MASTER, 2: SUBORDINATE. --> 
   <arg name="subordinate_delay_off_master_usec" default="0"/>     <!-- Delay subordinate camera off master camera by specified amount in usec. --> 
 
-  <node pkg="azure_kinect_ros_driver" type="node" name="azure_kinect_ros_driver" output="screen" required="$(arg required)">
+  <node pkg="sitc_ak_driver" type="node" name="sitc_ak_ros_driver" output="screen" required="$(arg required)">
     <param name="depth_enabled"     type="bool"   value="$(arg depth_enabled)" />
     <param name="depth_mode"        type="string" value="$(arg depth_mode)" />
     <param name="depth_unit"        type="string" value="$(arg depth_unit)" />
