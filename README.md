@@ -2,9 +2,9 @@
 
 This ROS package is to be used in conjunction with the Azure Kinect ROS Driver provided by Microsoft.
 
-To launch with two cameras, provide the master camera's serial number using the argument `master_sn`, and `sub_sn` for the subordinate camera. This will launch two ROS nodes, one for each camera and ensure that the sub camera is offset to the master camera so there are no disturbances.
+To launch with two cameras, provide the master camera's serial number using the argument `master_sn`, and `doctor_sn` for the subordinate camera. This will launch two ROS nodes, one for each camera and ensure that the sub camera is offset to the master camera so there are no disturbances.
 
-To change the topic namespace, 
+To change the topic namespace, pass the `master_id` and `doctor_id` arguments with desired values..
 
 ## Checklist for setting up a new device
 
