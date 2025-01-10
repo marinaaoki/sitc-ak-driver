@@ -18,5 +18,5 @@ if ! dpkg -s k4a-tools > /dev/null; then
 fi
 
 wget https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/5f79890933e1c81e325633152b2f2799df825b8b/scripts/99-k4a.rules
-mv 99-k4a.rules /etc/udev/rules.d/'
+sudo mv 99-k4a.rules /etc/udev/rules.d/
 
