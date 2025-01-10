@@ -17,6 +17,6 @@ if ! dpkg -s k4a-tools > /dev/null; then
 	sudo dpkg -i /tmp/k4a-tools_1.4.1_amd64.deb
 fi
 
-wget https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/5f79890933e1c81e325633152b2f2799df825b8b/scripts/99-k4a.rules
+wget -O 99-k4a.rules https://github.com/microsoft/Azure-Kinect-Sensor-SDK/blob/5f79890933e1c81e325633152b2f2799df825b8b/scripts/99-k4a.rules
 sudo mv 99-k4a.rules /etc/udev/rules.d/
 
