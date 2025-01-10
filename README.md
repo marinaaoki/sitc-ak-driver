@@ -26,3 +26,4 @@ To change the topic namespace, pass the `master_id` and `doctor_id` arguments wi
  - tf2_geometry_msgs
  - cv_bridge
  - camera_info_manager
+ - angles
