@@ -8,13 +8,12 @@ To change the topic namespace, pass the `master_id` and `doctor_id` arguments wi
 
 ## Checklist for setting up a new device
 
-1. Install the Azure Kinect SDK. k4a-tools does not have to be installed on headless devices. Use the script provided in this repo for Ubuntu 20.04.
+1. Install the Azure Kinect SDK. k4a-tools does not have to be installed on headless devices. Use the script provided in this repo for Ubuntu 20.04. The script also updates the k4a-rules using the script provided by Microsoft.
 2. Install ROS: http://wiki.ros.org/noetic/Installation/Ubuntu
 3. Set up ROS_MASTER_URI and ROS_HOSTNAME variables to point to the ROS master, which is:
 4. Set up SSH keys for each new host PC and set the URL to: `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git` (see https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 5. Clone this repository and the ROS driver repo provided by Microsoft (https://github.com/microsoft/Azure_Kinect_ROS_Driver).
-6. Update the k4a-rules using the script provided by Microsoft.
-7. For dual-driver launch, update the USB memory limit.
+6. For dual-driver launch, update the USB memory limit.
 
 ## Debugging
 - If you get an error similar to `No such command: xacro` while building the workspace, then you may need to install the ROS xacro package: `sudo apt-get install ros-noetic-xacro`.
