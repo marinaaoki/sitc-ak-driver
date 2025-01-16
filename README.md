@@ -19,13 +19,13 @@ To change the topic namespace, pass the `master_id` and `doctor_id` arguments wi
 ## Debugging
 - If you get an error similar to `No such command: xacro` while building the workspace, then you may need to install the ROS xacro package: `sudo apt-get install ros-noetic-xacro`.
 - The same goes for any other packages you may receive an error for while building the Kinect ROS driver. This includes, but is not limited to:
- - image_transport
- - image_geometry
- - tf2
- - tf2_ros
- - tf2_geometry_msgs
- - cv_bridge
- - camera_info_manager
- - angles
- - robot_state_publisher
- - joint_state_publisher
+    - image_transport
+    - image_geometry
+    - tf2
+    - tf2_ros
+    - tf2_geometry_msgs
+    - cv_bridge
+    - camera_info_manager
+    - angles
+    - robot_state_publisher
+    - joint_state_publisher
