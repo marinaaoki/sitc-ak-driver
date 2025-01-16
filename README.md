@@ -27,3 +27,5 @@ To change the topic namespace, pass the `master_id` and `doctor_id` arguments wi
  - cv_bridge
  - camera_info_manager
  - angles
+ - robot_state_publisher
+ - joint_state_publisher
