@@ -9,7 +9,7 @@ To change the topic namespace, pass the `master_id` and `doctor_id` arguments wi
 ## Checklist for setting up a new device
 
 1. Install ROS: http://wiki.ros.org/noetic/Installation/Ubuntu
-2. Set up ROS_MASTER_URI and ROS_HOSTNAME variables to point to the ROS master, which is: 163.221.132.135
+2. Set up ROS_MASTER_URI and ROS_HOSTNAME variables to point to the ROS master.
 3. Set up SSH keys for each new host PC and set the URL to: `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git` (see https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 4. Clone this repository and the ROS driver repo provided by Microsoft (https://github.com/microsoft/Azure_Kinect_ROS_Driver).
 5. Install the Azure Kinect SDK. k4a-tools does not have to be installed on headless devices. Use the script provided in this repo for Ubuntu 20.04. The script also updates the k4a-rules using the script provided by Microsoft.
